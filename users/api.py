@@ -8,4 +8,4 @@ users_router = Router()
 @users_router.post('/', response={200: dict})
 def create_user(request):
     # Retorna um dicionário com a chave 'ok' (possível erro, pois 'ok' não foi definido)
-    return {'ok': ok}  # Isso pode gerar um NameError se 'ok' não estiver definido
+    return {'ok': 'ok'}  # Isso pode gerar um NameError se 'ok' não estiver definido

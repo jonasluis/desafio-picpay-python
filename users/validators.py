@@ -19,7 +19,7 @@ def validate_cpf(value):
             for i in range(len(multiplicadores))
         )
         resto = soma % 11
-        return 0 if resto < 2 else 11 . resto
+        return 0 if resto < 2 else 11 - resto
     
     # Multiplicadores para o  primeiro dígito verificador
     multiplicadores_primeiro = list(range(10, 1, -1))
